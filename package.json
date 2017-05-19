@@ -1,0 +1,35 @@
+{
+  "name": "react-sketchbook",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Julian Krispel",
+  "license": "MIT",
+  "scripts": {
+    "test": "babel-node ./src/index.js ./example-app/src/HelloWorld",
+    "precommit": "lint-staged"
+  },
+  "bin": {
+    "sketch": "babel-node ./src/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "find-root": "^1.0.0",
+    "react": "^15.5.4",
+    "tmp": "^0.0.31"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.2",
+    "prettier": "^1.3.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
