@@ -2,6 +2,7 @@
   "name": "react-sketchbook",
   "version": "0.0.1",
   "main": "index.js",
+  "repository": "juliankrispel/react-pencil.git",
   "author": "Julian Krispel",
   "license": "MIT",
   "scripts": {
